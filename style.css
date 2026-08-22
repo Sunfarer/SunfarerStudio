@@ -1,0 +1,517 @@
+:root {
+    --teal-bg: #00b694;
+    --teal-nav: #168e7c;
+    --card: #22d3b1;
+    --button: #00b694;
+    --card-strong: #22d3b1;
+    --frame: #3ecbba;      
+    --frame-lip: #2fb6a8; 
+    --note: #ffb01f;
+    --ink: #111;
+    --drop: 0 8px 0 rgba(0, 0, 0, .15);
+    --drop-sm: 0 6px 0 rgba(0, 0, 0, .15);
+    --radius: 20px;
+}
+
+
+
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Outfit', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #111;
+    background-image: url("img/SF_Website_BG_Infinite_Pattern.webp");
+    background-repeat: repeat;
+    background-size: 400px auto;
+    background-color: #00b694;
+}
+
+.container {
+    width: min(92%, 520px);
+    margin: 0 auto;
+}
+
+
+
+.hero-card {
+    background: #22d3b1;
+    border-radius: 20px;
+    padding: 4rem 2rem;
+    text-align: center;
+    box-shadow: 0 8px 0 rgba(0,0,0,.15);
+}
+
+.social-links {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.social-links a {
+    flex: 1;             
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+
+    padding: 1rem;
+    border-radius: 15px;
+
+    background: #22d3b1;
+    text-decoration: none;
+    color: black;
+
+    box-shadow: 0 6px 0 rgba(0,0,0,.15);
+
+    transition: transform .18s ease, box-shadow .18s ease,
+                background .25s ease, color .25s ease;
+}
+
+.social-links i {
+    font-size: 1.3rem;
+    transition: transform .18s ease;
+}
+
+
+.social-links a:hover,
+.social-links a:focus-visible {
+    transform: translateY(-5px);
+    box-shadow: 0 11px 0 rgba(0,0,0,.18);
+}
+
+
+.social-links a:hover i {
+    animation: icon-pop .4s ease forwards;
+}
+
+
+.social-links a:active {
+    transform: translateY(3px);
+    box-shadow: 0 2px 0 rgba(0,0,0,.2);
+}
+
+
+.social-links a[href*="discord"]:hover,
+.social-links a[href*="discord"]:focus-visible   { background: #5865f2; color: #fff; }
+
+.social-links a[href*="itch"]:hover,
+.social-links a[href*="itch"]:focus-visible      { background: #fa5c5c; color: #fff; }
+
+.social-links a[href*="instagram"]:hover,
+.social-links a[href*="instagram"]:focus-visible {
+    background: linear-gradient(45deg, #f9ce34, #ee2a7b 55%, #6228d7);
+    color: #fff;
+}
+
+@keyframes icon-pop {
+    0%   { transform: scale(1)    rotate(0deg); }
+    40%  { transform: scale(1.3)  rotate(-12deg); }
+    70%  { transform: scale(1.1)  rotate(8deg); }
+    100% { transform: scale(1.15) rotate(0deg); }
+}
+
+.card {
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 2rem;
+    margin-top: 1rem;
+    box-shadow: var(--drop);
+    text-align: center;
+}
+
+.card h2 {
+    font-family: "Patrick Hand SC", cursive;
+  font-weight: 400;
+  font-style: normal;
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    font-variant-caps: small-caps;   
+    letter-spacing: .5px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+ 
+.card p {
+    max-width: 34ch;
+    margin-inline: auto;
+}
+ 
+.card p + p {
+    margin-top: 1rem;
+}
+
+#team {
+    padding-bottom: 6rem;
+}
+
+/* #team .card {
+    min-height: clamp(600px, 70vh, 700px);
+} */
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: left;
+}
+ 
+.project .polaroid {
+    flex: 0 0 200px;
+    transform: rotate(-2deg);
+}
+ 
+.project__text {
+    flex: 1 1 180px;
+}
+ 
+.project__text p {
+    max-width: none;
+    margin-inline: 0;
+}
+.hero-logo {
+    width: min(220px, 50%);
+    height: auto;
+}
+.hero-card h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-family: 'Walter Turncoat', cursive;
+    font-weight: 500; 
+     font-style: normal;
+}
+
+.hero-card p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+
+h1 {
+font-size: 2.5rem;
+font-weight: 600;
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: #168e7c;
+    gap: 40px;
+    z-index: 10;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+.logo img{
+    width: 40px;
+}
+.logo h3{
+    margin-left: 10px;
+    color : #111;
+    text-decoration: none;
+    font-size: 28px;
+    font-family: 'Walter Turncoat',cursive;
+    font-weight: 500;
+     font-style: normal;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 8px;
+}
+
+
+.nav-links a{
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+    border-radius: 10px;
+    background: var(--button);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-links a img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+    width: 34px;
+}
+
+.hamburger .bar{
+    flex-basis: 100%;
+    height: 4px;
+    background-color: #111;
+    margin: 3px;
+}
+
+section {
+    padding: 1rem 0;
+}
+
+
+
+
+.polaroid {
+    background: none;
+    padding: 0;
+    box-shadow: none;
+    position: relative;
+    transition: filter .25s ease;
+}
+
+.polaroid:hover,
+.polaroid:focus-visible {
+    filter: drop-shadow(0 8px 6px rgba(0, 0, 0, .3)) brightness(1.04);
+    z-index: 2;
+}
+ 
+.polaroid img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;              
+    object-fit: contain;
+    
+}
+ 
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: left;
+}
+ 
+.project .polaroid {
+    flex: 0 0 45%;
+    margin-left: -3.5rem;   
+    transform: rotate(-2deg);
+}
+ 
+.project .polaroid img {
+    aspect-ratio: 5 / 6;              
+    /* background: rgba(0, 0, 0, .12);    */
+}
+ 
+.project__text {
+    flex: 1 1 180px;
+}
+ 
+.project__text p {
+    max-width: none;
+    margin-inline: 0;
+}
+ 
+
+.polaroid-wall {
+    position: relative;
+    display: block;
+    aspect-ratio: 1 / 0.7;
+    margin: 1rem -2.5rem 0;
+}
+
+.polaroid-wall .polaroid {
+    position: absolute;
+    width: 38%;
+}
+
+.polaroid-wall .polaroid:nth-child(1) { top:  8%; left:  -5%; transform: rotate(-7deg); }
+.polaroid-wall .polaroid:nth-child(2) { top:  0;  left:  34%; transform: rotate(2deg);  }
+.polaroid-wall .polaroid:nth-child(3) { top: 10%; right: -10%; transform: rotate(9deg);  }
+.polaroid-wall .polaroid:nth-child(4) { top: 70%; left:  12%; transform: rotate(5deg); }
+.polaroid-wall .polaroid:nth-child(5) { top: 75%; left:  56%; transform: rotate(-4deg);  }
+ 
+
+
+.polaroid figcaption {
+    position: absolute;
+    left: 8%;
+    right: 8%;
+    bottom: 17%;
+    height: 18%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.polaroid__name {
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: clamp(.7rem, 2.2vw, .95rem);
+    line-height: 1.1;
+    color: var(--ink);
+}
+
+.polaroid__role {
+    font-size: clamp(.5rem, 1.5vw, .68rem);
+    line-height: 1.3;
+    color: rgba(0, 0, 0, .65);
+
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(4px);
+    transition: max-height .25s ease, opacity .2s ease, transform .25s ease;
+}
+
+.polaroid:hover .polaroid__role,
+.polaroid:focus-visible .polaroid__role {
+    max-height: 1.6em;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card--values {
+   
+    padding-inline: 1rem;
+}
+ 
+.notes {
+    position: relative;
+    display: block;
+    list-style: none;
+    aspect-ratio: 1 / 1.15;
+    margin: 1.5rem -3rem 0;
+}
+
+.note {
+    position: absolute;
+    width: 42%;
+}
+
+.note:nth-child(1) { top:  0%; left:  -6%; transform: rotate(-4deg); }
+.note:nth-child(2) { top:  5%; right: -6%; transform: rotate(3deg);  }
+.note:nth-child(3) { top: 36%; left:  29%; transform: rotate(-2deg); }
+.note:nth-child(4) { top: 67%; left:  -6%; transform: rotate(4deg);  }
+.note:nth-child(5) { top: 72%; right: -6%; transform: rotate(-3deg); }
+ 
+.note img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    display: block;
+}
+
+.note__text {
+    position: absolute;
+    inset: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+.note__text p {
+    font-size: clamp(.45rem, 1.4vw, .6rem);
+    line-height: 1.25;
+}
+
+.note__text h3 {
+    font-family: 'Patrick Hand SC', cursive;
+    font-weight: 500;
+    font-size: clamp(.62rem, 2.1vw, .85rem);
+    line-height: 1.1;
+}
+
+ 
+
+.contact-list {
+    list-style: none;
+    margin-top: 1.5rem;
+    display: grid;
+    gap: .75rem;
+}
+ 
+.contact-list a {
+    display: inline-block;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 3px solid rgba(0, 0, 0, .25);
+    padding-bottom: 2px;
+}
+ 
+.contact-list a:hover,
+.contact-list a:focus-visible {
+    border-bottom-color: var(--ink);
+}
+ 
+
+
+
+
+
+@media (max-width:768px){
+    nav{
+        gap: 12px;
+        padding: 10px;
+    }
+    .logo{
+        margin-right: 0;
+    }
+    .logo img{
+        width: 32px;
+    }
+    .logo h3{
+        font-size: 20px;
+    }
+    .nav-links{
+        gap: 5px;
+    }
+   .nav-links a{
+        width: 32px;
+        height: 32px;
+        border-radius: 9px;
+        padding: 5px;
+    }
+    .social-links {
+        flex-wrap: wrap;
+    }
+
+    .social-links a {
+        flex: 1 1 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
