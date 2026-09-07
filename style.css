@@ -22,6 +22,7 @@
 }
 html{
     scroll-behavior: smooth;
+     scroll-padding-top: clamp(90px, 18vh, 200px);
 }
 body {
     font-family: 'Outfit', system-ui, sans-serif;
@@ -53,7 +54,7 @@ body {
     display: flex;
     width: 100%;
     gap: 1rem;
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
 
 .social-links a {
@@ -273,7 +274,7 @@ nav{
 }
 
 section {
-    padding: 1rem 0;
+    padding: 0.3rem 0;
 }
 
 
@@ -345,11 +346,11 @@ section {
     width: 38%;
 }
 
-.polaroid-wall .polaroid:nth-child(1) { top:  8%; left:  -5%; transform: rotate(-7deg); }
-.polaroid-wall .polaroid:nth-child(2) { top:  0;  left:  34%; transform: rotate(2deg);  }
-.polaroid-wall .polaroid:nth-child(3) { top: 10%; right: -10%; transform: rotate(9deg);  }
-.polaroid-wall .polaroid:nth-child(4) { top: 70%; left:  12%; transform: rotate(5deg); }
-.polaroid-wall .polaroid:nth-child(5) { top: 75%; left:  56%; transform: rotate(-4deg);  }
+.polaroid-wall .polaroid:nth-child(1) { top:  -8%; left:  -5%; transform: rotate(-7deg); }
+.polaroid-wall .polaroid:nth-child(2) { top:  -12;  left:  34%; transform: rotate(2deg);  }
+.polaroid-wall .polaroid:nth-child(3) { top: -6%; right: -10%; transform: rotate(9deg);  }
+.polaroid-wall .polaroid:nth-child(4) { top: 54%; left:  12%; transform: rotate(5deg); }
+.polaroid-wall .polaroid:nth-child(5) { top: 58%; left:  56%; transform: rotate(-4deg);  }
  
 
 
@@ -403,20 +404,20 @@ section {
     position: relative;
     display: block;
     list-style: none;
-    aspect-ratio: 1 / 1.15;
-    margin: 1.5rem -3rem 0;
+    aspect-ratio: 1 / 0.68;
+    margin: 0.5rem -3rem 0;
 }
 
 .note {
     position: absolute;
-    width: 42%;
+    width: 37%;
 }
 
-.note:nth-child(1) { top:  0%; left:  -6%; transform: rotate(-4deg); }
-.note:nth-child(2) { top:  5%; right: -6%; transform: rotate(3deg);  }
-.note:nth-child(3) { top: 36%; left:  29%; transform: rotate(-2deg); }
-.note:nth-child(4) { top: 67%; left:  -6%; transform: rotate(4deg);  }
-.note:nth-child(5) { top: 72%; right: -6%; transform: rotate(-3deg); }
+.note:nth-child(1) { top:  -27%;  left:  -4%; transform: rotate(-4deg); }
+.note:nth-child(2) { top:  -25%;  right: -4%; transform: rotate(3deg);  }
+.note:nth-child(3) { top: 23%;  left:  31%; transform: rotate(-2deg); }
+.note:nth-child(4) { top: 53%;  left:  -2%; transform: rotate(4deg);  }
+.note:nth-child(5) { top: 55%;  right: -2%; transform: rotate(-3deg); }
  
 .note img {
     width: 100%;
@@ -472,7 +473,32 @@ section {
     border-bottom-color: var(--ink);
 }
  
+.site-footer {
+    margin-top: 2rem;
+    padding: 1rem 1rem 1.25rem;
+    background: var(--teal-nav);
+    text-align: center;
+}
 
+.footer-logo {
+    width: 36px;
+    height: auto;
+    display: block;
+    margin: 0 auto .4rem;
+    opacity: .9;
+}
+
+.footer-tagline {
+    font-family: 'Walter Turncoat', cursive;
+    font-size: .85rem;
+    color: var(--ink);
+}
+
+.footer-copy {
+    margin-top: .25rem;
+    font-size: .75rem;
+    color: rgba(0, 0, 0, .55);
+}
 
 
 
