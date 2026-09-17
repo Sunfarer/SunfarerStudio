@@ -54,7 +54,7 @@ body {
     display: flex;
     width: 100%;
     gap: 1rem;
-    margin-top: 5rem;
+    margin-top: 1.6rem;
 }
 
 .social-links a {
@@ -152,7 +152,7 @@ body {
 }
 
 #team {
-    padding-bottom: 6rem;
+    padding-bottom: 2rem;
 }
 
 /* #team .card {
