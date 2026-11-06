@@ -400,6 +400,7 @@ section {
 .card--values {
    
     padding-inline: 1rem;
+    margin-bottom: 8px;
 }
  
 .notes {
@@ -412,14 +413,14 @@ section {
 
 .note {
     position: absolute;
-    width: 37%;
+    width: 41%;
 }
 
-.note:nth-child(1) { top:  -27%;  left:  -4%; transform: rotate(-4deg); }
-.note:nth-child(2) { top:  -25%;  right: -4%; transform: rotate(3deg);  }
-.note:nth-child(3) { top: 23%;  left:  31%; transform: rotate(-2deg); }
-.note:nth-child(4) { top: 53%;  left:  -2%; transform: rotate(4deg);  }
-.note:nth-child(5) { top: 55%;  right: -2%; transform: rotate(-3deg); }
+.note:nth-child(1) { top:  -15%;  left:  -8%; transform: rotate(-3deg); }
+.note:nth-child(2) { top:  -15%;  right: -8%; transform: rotate(3deg);  }
+.note:nth-child(3) { top: 15%;  left:  30%; transform: rotate(-3deg); }
+.note:nth-child(4) { top: 53%;  left:  -6%; transform: rotate(4deg);  }
+.note:nth-child(5) { top: 53%;  right: -8%; transform: rotate(-3deg); }
  
 .note img {
     width: 100%;
@@ -431,7 +432,7 @@ section {
 
 .note__text {
     position: absolute;
-    inset: 20%;
+    inset: 17%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -442,14 +443,14 @@ section {
 }
 
 .note__text p {
-    font-size: clamp(.45rem, 1.4vw, .6rem);
-    line-height: 1.25;
+    font-size: clamp(.7rem, 1.5vw, .8rem);
+    line-height: 1.1;
 }
 
 .note__text h3 {
     font-family: 'Patrick Hand SC', cursive;
     font-weight: 500;
-    font-size: clamp(.62rem, 2.1vw, .85rem);
+    font-size: clamp(1rem, 2.2vw, 1.3rem);
     line-height: 1.1;
 }
 
