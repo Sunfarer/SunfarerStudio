@@ -45,6 +45,7 @@ body {
 .hero-card {
     background: #22d3b1;
     border-radius: 20px;
+    margin-top: .7rem;
     padding: 4rem 2rem;
     text-align: center;
     box-shadow: 0 8px 0 rgba(0,0,0,.15);
