@@ -144,8 +144,9 @@ body {
 }
  
 .card p {
-    max-width: 34ch;
+    max-width: 31ch;
     margin-inline: auto;
+    margin-bottom: 12px;
 }
  
 .card p + p {
